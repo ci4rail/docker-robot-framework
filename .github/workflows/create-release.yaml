@@ -12,7 +12,7 @@ defaults:
 
 jobs:
   create-release:
-    name: crete-release
+    name: create-release
     runs-on: ubuntu-20.04
     steps:
       # ref: https://github.com/oprypin/find-latest-tag
@@ -20,7 +20,7 @@ jobs:
         id: upstream_tag
         uses: oprypin/find-latest-tag@v1
         with:
-          repository: https://github.com/robotframework/robotframework
+          repository: robotframework/robotframework
           releases-only: false
 
       - name: Create Branch
