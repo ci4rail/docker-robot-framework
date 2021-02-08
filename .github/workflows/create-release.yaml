@@ -3,7 +3,7 @@ name: Create Release
 on:
   schedule:
     # Run every hour sharp, ref: https://crontab.guru/#0_*_*_*_*
-    - cron: "* * * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 defaults:
