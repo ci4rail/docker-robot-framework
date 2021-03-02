@@ -1,4 +1,4 @@
-FROM python:3.9.2-alpine3.13 AS get_sources
+FROM alpine:3.13 AS get_sources
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 ARG ROBOTFRAMEWORK_VERSION
