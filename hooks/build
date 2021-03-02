@@ -92,9 +92,9 @@ docker build \
     ${BUILD_PATH}.
 
 ## Push the default arch image so manifest-tool can find it
-docker push ${IMAGE_NAME}_${DEFAULT_ARCH}
+docker push ${IMAGE_NAME}-${DEFAULT_ARCH}
 
 ## Tag the default image so dockerhub can push it.
-docker tag ${IMAGE_NAME}_${DEFAULT_ARCH} ${IMAGE_NAME}
+docker tag ${IMAGE_NAME}-${DEFAULT_ARCH} ${IMAGE_NAME}
 
 echo "[***] ...build hook complete."
