@@ -77,7 +77,7 @@ do
         ${BUILD_PATH}.
 
     ## Push the target images
-    docker push ${IMAGE_NAME}-${DEFAULT_ARCH}
+    docker push ${IMAGE_NAME}-${BUILD_ARCH}
 done
 
 
