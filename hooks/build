@@ -75,6 +75,9 @@ do
         --build-arg ROBOTFRAMEWORK_VERSION=${SOURCE_BRANCH} \
         -t ${IMAGE_NAME}-${BUILD_ARCH} \
         ${BUILD_PATH}.
+
+    ## Push the target images
+    docker push ${IMAGE_NAME}-${DEFAULT_ARCH}
 done
 
 
