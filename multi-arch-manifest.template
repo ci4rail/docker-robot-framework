@@ -1,20 +1,20 @@
-image: siredmar/robot:latest
+image: siredmar/robot:${TAG}
 manifests:
-  - image: siredmar/robot:amd64
+  - image: siredmar/robot:${TAG}-amd64
     platform:
       architecture: amd64
       os: linux
-  - image: siredmar/robot:arm32v5
+  - image: siredmar/robot:${TAG}-arm32v5
     platform:
       architecture: arm
       os: linux
       variant: v5
-  - image: siredmar/robot:arm32v7
+  - image: siredmar/robot:${TAG}-arm32v7
     platform:
       architecture: arm
       os: linux
       variant: v7
-  - image: siredmar/robot:arm64v8
+  - image: siredmar/robot:${TAG}-arm64v8
     platform:
       architecture: arm64
       os: linux
