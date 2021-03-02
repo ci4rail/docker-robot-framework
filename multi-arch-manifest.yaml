@@ -1,0 +1,21 @@
+image: siredmar/robot:latest
+manifests:
+  - image: siredmar/robot:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: siredmar/robot:arm32v5
+    platform:
+      architecture: arm
+      os: linux
+      variant: v5
+  - image: siredmar/robot:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: siredmar/robot:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
