@@ -22,4 +22,4 @@ docker buildx build \
 	--platform linux/amd64,linux/arm64/v8,linux/arm/v7,linux/arm/v6 \
 	--progress plain --push \
     --build-arg ROBOTFRAMEWORK_VERSION=${SOURCE_BRANCH} \
-	-f $DOCKERFILE_PATH -t $IMAGE_NAME .
+	-f $DOCKERFILE_PATH -t $IMAGE_NAME:${SOURCE_BRANCH} .
