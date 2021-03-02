@@ -44,7 +44,6 @@ do
         # Break if not actually a file.
         break;
     fi
-
     # TODO: Relative Dockerfile path MUST NOT have a '.' in it
     echo "[---] Found additional file to build: ${FILE}"
     TARGET_ARCH=$(echo "${FILE}" | cut -d '.' -f 3)
