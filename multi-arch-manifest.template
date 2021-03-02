@@ -4,11 +4,11 @@ manifests:
     platform:
       architecture: amd64
       os: linux
-  - image: siredmar/robot:${TAG}-armv5
+  - image: siredmar/robot:${TAG}-armv6
     platform:
       architecture: arm
       os: linux
-      variant: v5
+      variant: v6
   - image: siredmar/robot:${TAG}-armv7
     platform:
       architecture: arm
