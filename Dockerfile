@@ -1,6 +1,6 @@
 FROM alpine:3.13 AS get_sources
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
+    apk add --no-cache git
 ARG ROBOTFRAMEWORK_VERSION
 ENV ROBOTFRAMEWORK_VERSION=${ROBOTFRAMEWORK_VERSION}
 RUN mkdir -p /source && cd /source && \
