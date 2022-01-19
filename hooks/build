@@ -23,4 +23,4 @@ docker buildx build \
     --progress plain \
     --push \
     --build-arg ROBOTFRAMEWORK_VERSION=${SOURCE_BRANCH} \
-    -t ${DOCKER_REPO}/${IMAGE_NAME}:${SOURCE_BRANCH} .
+    -t ${DOCKER_REPO}/${IMAGE_NAME} .
